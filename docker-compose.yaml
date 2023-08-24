@@ -1,6 +1,15 @@
 version: '3'
 
 services:
+
+  app:
+    build:
+      context: .
+    volumes:
+      - .:/home/node/app
+    ports:
+      - 3000:3000
+
   db:
     image: mysql:8.0.30-debian
     volumes:

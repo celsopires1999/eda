@@ -71,3 +71,23 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 ## License
 
 Nest is [MIT licensed](LICENSE).
+
+## Notes
+
+- Aula no Youtube - https://www.youtube.com/watch?v=1O2LkhlKO5Q
+- Para inicializar o banco de dados
+
+```bash
+$ npm run refresh-db
+```
+
+- Criar a fila `mailer` no RabbitMQ
+- Fazer o bind da exchange `amq.direct` com a fila `mailer` usando o Routing key `OrderApprovedIntegrationEvent`
+
+- Para rodar as aplicação mailer
+
+```bash
+$ npm run start mailer
+```
+
+- Banco de Dados para armazenar eventos - https://www.eventstore.com

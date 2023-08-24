@@ -10,7 +10,7 @@ import { StoredEvent } from './libs/@shared/src/domain/stored-event';
 export default {
   entities: [Product, Customer, Order, OrderItem, Invoice, StoredEvent],
   dbName: 'nest',
-  host: 'localhost',
+  host: 'db',
   user: 'root',
   password: 'root',
   type: 'mysql',

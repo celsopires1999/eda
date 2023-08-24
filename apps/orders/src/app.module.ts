@@ -21,14 +21,14 @@ import { StoredEvent } from '@shared';
     MikroOrmModule.forRoot({
       entities: [Product, Customer, Order, OrderItem, Invoice, StoredEvent],
       dbName: 'nest',
-      host: 'localhost',
+      host: 'db',
       user: 'root',
       password: 'root',
       type: 'mysql',
     }),
     BullModule.forRoot({
       redis: {
-        host: 'localhost',
+        host: 'redis',
         port: 6379,
       },
     }),
